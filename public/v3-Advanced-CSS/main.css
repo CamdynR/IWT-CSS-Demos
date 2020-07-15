@@ -1,0 +1,198 @@
+/* Main Stylesheet Advanced CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #88CBDF;
+}
+
+body,
+input {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer {
+  bottom: 20px;
+  left: 50%;
+  position: absolute;
+  display: inline-block;
+  transform: translateX(-148.65px);
+}
+
+header {
+  align-items: center;
+  background-color: white;
+  display: grid;
+  grid-template-areas: 'logo nav';
+  filter: drop-shadow(0px 4px 8px rgb(0,0,0,0.25));
+  height: 110px;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+header>a {
+  margin-left: 18px;
+}
+
+header>nav {
+  justify-self: flex-end;
+}
+
+header>nav>ul,
+footer>nav>ul  {
+  align-items: center;
+  display: flex;
+  font-size: 1.4em;
+}
+
+header>nav>ul>li,
+footer>nav>ul>li:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+header form>input {
+  background-color: rgb(226, 226, 226);
+  border: none;
+  border-bottom: 2px solid rgb(180, 180, 180);
+  border-radius: 0;
+  padding: 4px 8px;
+}
+
+header form>input:focus {
+  border-bottom-color: black;
+  outline: none;
+}
+
+input {
+  font-size: 1em;
+}
+
+main>section>h1,
+main>section>p,
+#imageCarousel {
+  position: relative;
+  z-index: 2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+#carouselControls {
+  bottom: calc(10% - 70px);
+  font-size: 2.3em;
+  right: calc(8% + 267.5px);
+  position: absolute;
+  z-index: 5;
+}
+
+#carouselControls>ul {
+  display: flex;
+}
+
+#carouselControls>ul>li>a {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+#carouselControls>ul>li:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+#imageCarousel {
+  bottom: 10%;
+  display: grid;
+  filter: drop-shadow(0px 4px 8px rgb(0,0,0,0.4));
+  grid-template-areas: 'dome butler buddy car';
+  overflow-x: scroll;
+  padding-bottom: 20px;
+  position: absolute;
+  right: 8%;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  width: 750px;
+}
+
+#imageCarousel::-webkit-scrollbar {
+  height: 13px;
+  width: 20px;
+}
+
+#imageCarousel::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+#imageCarousel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.493);
+  border-radius: 10px;
+}
+
+#imageCarousel img {
+  scroll-snap-align: start;
+  margin: 0 200px 20px 0;
+  transform: scale(1);
+  transition: transform 0.5s;
+  transform-origin: origin origin;
+}
+
+#imageCarousel img:last-of-type {
+  margin: 0 0 20px 0;
+}
+
+#imageCarousel a {
+  color: white;
+  display: block;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.8);
+}
+
+#mainSectionText {
+  top: 25%;
+  left: 7%;
+  position: absolute;
+  width: 800px;
+  z-index: 4;
+}
+
+#mainSectionText>h1 {
+  font-size: 5em;
+}
+
+#mainSectionText>p {
+  font-size: 1.7em;
+}
+
+#whiteBackgroundSlice {
+  background-color: white;
+  filter: drop-shadow(0px 4px 8px rgb(0,0,0,0.25));
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  transform: rotate(-15deg);
+  top: -25%;
+  right: 0%;
+  width: 110%;
+  z-index: 1;
+}

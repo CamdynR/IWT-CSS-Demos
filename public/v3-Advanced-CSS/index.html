@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>v3 - Advanced CSS</title>
+
+  <!-- Google Fonts - Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body class="prototype outline">
+  <header>
+    <a href="#">
+      <img alt="Demo Company Logo" src="images/logo.svg" height=70 title="Home">
+    </a>
+    
+    <nav>
+      <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">News</a>
+        </li>
+        <li>
+          <a href="#">Jobs</a>
+        </li>
+        <li>
+          <form action="/search.php" method="GET">
+            <input type="text" id="searchBar" autocomplete="off" name="searchBar" placeholder="Search" spellcheck="false">
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="mainSectionText">
+      <h1>Welcome.</h1>
+      <p>Demo Company is the leading creator of Robots,
+        Personal Space Vehicles (PSVs), and Habitat Domes
+        in the known universe. This website also demonstrates
+        what our parent company, Powell Internet Consulting,
+        can do for your site.</p>
+    </section>
+    <div id="whiteBackgroundSlice"></div>
+    <nav id="carouselControls">
+      <ul>
+        <li>
+          <a href="#domeImg">1</a>
+        </li>
+        <li>
+          <a href="#butlerImg">2</a>
+        </li>
+        <li>
+          <a href="#buddyImg">3</a>
+        </li>
+        <li>
+          <a href="#carImg">4</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="imageCarousel">
+      <div id="domeImg">
+        <img alt="Futuristic dome house" src="images/dome.svg" height=400 width=750>
+        <a href="#">Dome</a>
+      </div>
+      <div id="butlerImg">
+        <img alt="Futuristic robot butler" src="images/butler.svg" height=400 width=750>
+        <a href="#">Robot Butler</a>
+      </div>
+      <div id="buddyImg">
+        <img alt="Futuristic robot buddy" src="images/buddy.svg" height=400 width=750>
+        <a href="#">Robot Buddy</a>
+      </div>
+      <div id="carImg">
+        <img alt="Futuristic car" src="images/car.svg" height=400 width=750>
+        <a href="#">PSV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Site Map</a>
+        </li>
+        <li>
+          <a href="#">Help</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
